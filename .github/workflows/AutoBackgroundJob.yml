@@ -1,9 +1,9 @@
 name: Auto Background Checking
 
 on: 
-  [push]
-  # schedule:
-  #   - cron: '30 8 * * *'
+  # [push]
+  schedule:
+    - cron: '30 8 * * *'
 
 jobs:
   build-linux:

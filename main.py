@@ -12,9 +12,6 @@ from urllib import parse
 def send_email(ask_word=False):
     HOST = 'smtp.163.com'  # 网易邮箱smtp
     PORT = '465'
-    # sender = 'daxlin13@163.com'  # 发送人邮箱
-    # receiver = '906603565@qq.com'  # 收件人邮箱
-    # sender_pw = 'WAVYBXXCVQDDKVLT'
     if ask_word is True:
         unused_pattern, new_title, new_link = content_list(True)  # 提取网页内容列表
     else: 
