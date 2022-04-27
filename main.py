@@ -64,6 +64,9 @@ def update():
         else:
             now = datetime.datetime.now()
             print(now, "尚无更新")
+        if datetime.datetime.now().hour < 17:
+            print('time up')
+            exit()
         time.sleep(3600)  # 一小时检测一次
 
 
