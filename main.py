@@ -63,7 +63,7 @@ def update():
             else:
                 send_email()
         else:
-            now = datetime.datetime.now()
+            now = datetime.datetime.now(pytz.timezone('Asia/Hong_Kong'))
             print(now, "尚无更新")
         if datetime.datetime.now(pytz.timezone('Asia/Hong_Kong')).hour > 18:
             print('time up')
