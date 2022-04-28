@@ -3,6 +3,7 @@ import os
 import re
 import time
 import requests
+import pytz
 import datetime
 import smtplib
 from bs4 import BeautifulSoup
@@ -64,7 +65,7 @@ def update():
         else:
             now = datetime.datetime.now()
             print(now, "尚无更新")
-        if datetime.datetime.now().hour > 18:
+        if datetime.datetime.now(pytz.timezone('Asia/Hong_Kong')).hour > 18:
             print('time up')
             exit()
         time.sleep(3600)  # 一小时检测一次
