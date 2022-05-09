@@ -3,7 +3,7 @@ name: Auto Background Checking
 on: 
   # [push]
   schedule:
-    - cron: '30 23 * * *'
+    - cron: '30 5,23 * * *'
 
 jobs:
   build-linux:
