@@ -69,7 +69,7 @@ def update():
             print('time up')
             exit()
         elif datetime.datetime.now(pytz.timezone('Asia/Hong_Kong')).hour < 13:
-            if datetime.datetime.now(pytz.timezone('Asia/Hong_Kong')).hour > 12:
+            if datetime.datetime.now(pytz.timezone('Asia/Hong_Kong')).hour > 11:
                 print('already 12')
                 exit()
         time.sleep(3600)  # 一小时检测一次
